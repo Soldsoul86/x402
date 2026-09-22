@@ -3,8 +3,10 @@
  * against `@x402/core`.
  *
  * `specs/x402-specification-v2.md` states its requirements on seven lines,
- * carrying eleven RFC-2119 keywords between them (7 MUST, 2 MUST NOT,
- * 2 SHOULD); `:289` alone carries five of them. This file holds
+ * carrying eleven requirement keywords between them (7 MUST, 2 MUST NOT,
+ * 2 SHOULD); `:289` alone carries five. A grep over the full RFC-2119 set
+ * returns more, because `MAY` is a permission rather than an obligation and
+ * is not counted here. This file holds
  * one test per requirement that is observable from this package, each citing
  * the line it comes from, so that a change to the implementation that
  * silently drops an obligation fails here rather than in review.
