@@ -2,13 +2,16 @@
  * Conformance: the normative statements of the v2 MCP transport binding,
  * asserted against `@x402/mcp`.
  *
- * `specs/transports-v2/mcp.md` carries three RFC-2119 statements. All three
- * are observable from this package and all three are below, each citing the
- * line it comes from.
+ * `specs/transports-v2/mcp.md` carries five RFC-2119 keywords on five lines
+ * (2 MUST, 2 REQUIRED, 1 SHOULD). The `(REQUIRED)` markers at `:27` and `:28`
+ * name the two formats the `:25` MUST already requires, so they add no
+ * obligation beyond it. Three statements are therefore independently
+ * observable, and all three are below, each citing the line it comes from.
  *
  * The sibling HTTP and A2A bindings (`specs/transports-v2/http.md`,
  * `a2a.md`) carry none, so MCP is the whole of the transport-level
- * obligation surface today.
+ * obligation surface today. A keyword grep of `http.md` matches only the
+ * `PAYMENT-REQUIRED` header name, not the RFC-2119 term.
  */
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
