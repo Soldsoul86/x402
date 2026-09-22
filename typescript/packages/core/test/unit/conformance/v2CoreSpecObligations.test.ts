@@ -2,9 +2,9 @@
  * Conformance: the normative statements of the v2 core specification, asserted
  * against `@x402/core`.
  *
- * `specs/x402-specification-v2.md` states its requirements on eight lines,
- * carrying twelve RFC-2119 keywords between them (7 MUST, 2 MUST NOT,
- * 1 REQUIRED, 2 SHOULD); `:289` alone carries five of them. This file holds
+ * `specs/x402-specification-v2.md` states its requirements on seven lines,
+ * carrying eleven RFC-2119 keywords between them (7 MUST, 2 MUST NOT,
+ * 2 SHOULD); `:289` alone carries five of them. This file holds
  * one test per requirement that is observable from this package, each citing
  * the line it comes from, so that a change to the implementation that
  * silently drops an obligation fails here rather than in review.
